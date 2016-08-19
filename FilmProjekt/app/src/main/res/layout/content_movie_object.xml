@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pl.jakubor.filmprojekt.MovieObjectActivity"
+    tools:showIn="@layout/activity_movie_object">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <TextView
+           android:id="@+id/descTextView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="10dp"
+           android:text="Opis"
+           android:textSize="25dp"
+           android:textStyle="bold"
+           />
+        <TextView
+            android:id="@+id/objectTextView"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            />
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:orientation="horizontal"
+            >
+            <TextView
+            android:id="@+id/dataTextView"
+                android:text="Data premiery: "
+                style="@style/MovieObjectTagStyle" />
+            <TextView
+                android:id="@+id/data2TextView"
+                android:textStyle="bold"
+                style="@style/MovieObject2TagStyle" />
+            <TextView
+                android:id="@+id/genreTextView"
+                android:text="Gatunek: "
+                style="@style/MovieObjectTagStyle" />
+            <TextView
+                android:id="@+id/genre2TextView"
+                style="@style/MovieObject2TagStyle" />
+            <TextView
+                android:id="@+id/directorTextView"
+                android:text="Reżyser: "
+                style="@style/MovieObjectTagStyle" />
+            <TextView
+                android:id="@+id/director2TextView"
+                style="@style/MovieObject2TagStyle" />
+            <TextView
+                android:id="@+id/countryTextView"
+                android:text="Kraj produkcji: "
+                style="@style/MovieObjectTagStyle" />
+            <TextView
+                android:id="@+id/country2TextView"
+                style="@style/MovieObject2TagStyle" />
+        </GridLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
